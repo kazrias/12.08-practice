@@ -21,10 +21,7 @@ function isWordIncluded(matrix, word) {
     for (let i = 0; i < maxRowSize; i++) {
         res = ''
         for (let j = 0; j < matrix.length; j++) {
-            if (typeof matrix[j][i] === 'undefined')
-                res += '.'
-            else
-                res += matrix[j][i]
+            res += matrix[j][i]
         }
         if (res.includes(word)) return true
     }
@@ -33,10 +30,7 @@ function isWordIncluded(matrix, word) {
     for (let i = 0; i < maxRowSize; i++) {
         res = ''
         for (let j = matrix.length - 1; j >= 0; j--) {
-            if (typeof matrix[j][i] === 'undefined')
-                res += '.'
-            else
-                res += matrix[j][i]
+            res += matrix[j][i]
         }
         if (res.includes(word)) return true
     }
@@ -45,7 +39,7 @@ function isWordIncluded(matrix, word) {
 
 let matrix = [
     ['b', 'a', 'c'],
-    ['a', 'x'],
+    ['a', 'x', 'o'],
     ['n', 'e', 'o'],
     ['f', 'k', 'n']
 ]

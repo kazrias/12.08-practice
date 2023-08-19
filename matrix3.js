@@ -36,15 +36,3 @@ function isWordIncluded(matrix, word) {
     }
     return false
 }
-
-let matrix = [
-    ['b', 'a', 'c'],
-    ['a', 'x', 'o'],
-    ['n', 'e', 'o'],
-    ['f', 'k', 'n']
-]
-
-console.log(isWordIncluded(matrix, 'axe')); //true     
-console.log(isWordIncluded(matrix, 'bac')); //true
-console.log(isWordIncluded(matrix, 'no'));  //true
-console.log(isWordIncluded(matrix, 'xa'));  //true

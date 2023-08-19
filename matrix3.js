@@ -17,8 +17,7 @@ function isWordIncluded(matrix, word) {
     }
 
     //top to bottom
-    let maxRowSize = Math.max(...matrix.map(item => item.length))
-    for (let i = 0; i < maxRowSize; i++) {
+    for (let i = 0; i < matrix[0].length; i++) {
         res = ''
         for (let j = 0; j < matrix.length; j++) {
             res += matrix[j][i]
@@ -27,7 +26,7 @@ function isWordIncluded(matrix, word) {
     }
 
     //bottom to top
-    for (let i = 0; i < maxRowSize; i++) {
+    for (let i = 0; i < matrix[0].length; i++) {
         res = ''
         for (let j = matrix.length - 1; j >= 0; j--) {
             res += matrix[j][i]
